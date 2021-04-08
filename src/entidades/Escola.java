@@ -18,13 +18,9 @@ public class Escola {
 	    QtdAlunoMat = qtdAlunoMat;
 		Nome = Nome;
 	}
-	// metodo construtor vazio
+	
 	public Escola() {};
 	
-    
-    
-    
-    
     public String getNome() {
 		return Nome;
 	}
@@ -54,6 +50,31 @@ public class Escola {
 	}
 	public void setQtdAlunoMat(Integer qtdAlunoMat) {
 		QtdAlunoMat = qtdAlunoMat;
+	}
+	
+	public void matricularAluno(int posicao, Aluno aluno) {
+		
+		Alunos[posicao]=aluno.getNome();
+		
+		
+	}
+	
+	public String buscaAluno(int posicao) {
+		 boolean existe = false;
+		 String msg = "";
+		 
+		 for (int i=0; i<=Alunos.length; i++) {
+			 if (i==posicao) {
+				 existe =true;
+				 msg = Alunos[i];
+				 
+			  }else {
+				  msg= "Aluno nao cadastrado";
+			  }
+			 		
+			 
+	}
+		return msg;
 	}
 	
 }
