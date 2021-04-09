@@ -69,6 +69,7 @@ public class Escola {
 				 msg = Alunos[i];
 				 
 			  }else {
+				  existe = false;
 				  msg= "Aluno nao cadastrado";
 			  }
 			 		

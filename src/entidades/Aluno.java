@@ -49,6 +49,19 @@ public class Aluno {
 		Matricula = matricula;
 	}
 	
+	public boolean alunoExite(String matricula) {
+		   boolean existe=false;
+	      
+		   if (this.Matricula.equals(matricula)) {
+	    	  existe=false;
+	    	  
+	    	}else {
+	    		existe=true;
+	    	}
+	      return existe;
+	      
+	}
+	
 	
 	
 
