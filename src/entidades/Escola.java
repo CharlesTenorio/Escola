@@ -25,7 +25,7 @@ public class Escola {
 		return Nome;
 	}
 	public void setNome(String nome) {
-		this.Nome = nome;
+		Nome = nome;
 	}
 	public String getEndereco() {
 		return Endereco;
@@ -52,9 +52,9 @@ public class Escola {
 		QtdAlunoMat = qtdAlunoMat;
 	}
 	
-	public void matricularAluno(int posicao, Aluno aluno) {
+	public void matricularAluno(int posicao, String AlunoMatriculado) {
 		
-		Alunos[posicao]=aluno.getNome();
+		Alunos[posicao]=AlunoMatriculado;
 		
 		
 	}

@@ -23,6 +23,7 @@ public class Principal {
 		System.out.println("qtd de alunos matirculados:");
 		int qtdAlunos =sc.nextInt();
 		escola.setQtdAlunoMat(qtdAlunos);
+		escola.setAlunos(new String[qtdAlunos]);
 		
 		
 		for (int i = 0; i < qtdAlunos; i++) {
@@ -50,7 +51,7 @@ public class Principal {
 				int idadeAlunos =sc.nextInt();
 				aluno.setIdade(idadeAlunos);
 				
-				escola.getAlunos()[i]=aluno.toString(); // falata arruma aqui 
+				escola.matricularAluno(i, aluno.toString()); 
 				
 				System.out.println("Aluno cadastrado com sucesso");
 				System.out.println(escola.getAlunos());

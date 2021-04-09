@@ -61,6 +61,13 @@ public class Aluno {
 	      return existe;
 	      
 	}
+	// sobrecrevi o metodo toString para retorna um representação string do objeto
+	@Override 
+	public String toString() {
+		String DadosAluno = "";
+		DadosAluno = "Nome:" + Nome + " Idade:" +Idade.toString() +"Cpf: " +Cpf +" Email:"+Email +" Matricula:" + Matricula;
+		return DadosAluno;
+	}
 	
 	
 	
